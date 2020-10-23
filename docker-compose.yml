@@ -1,0 +1,13 @@
+version: '3'
+services:
+  vue-dev:
+    image: uutan/mobile-designer
+    container_name: vue-dev
+    ports:
+      - '8080:8080'
+    # restart: always
+    volumes:
+      - .:/workspace
+    stdin_open: true
+    tty: true
+
